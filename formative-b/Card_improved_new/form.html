@@ -11,10 +11,15 @@
 
 
     <div class="container">
+        <!-- action = action to be performed when the form is submitted -->
+        <!-- method = specifies the HTTP method (GET or POST) to be used when submitting the form data -->
+        <!-- get = defult, submitted form data will be visable in the page address -->
+        <!-- post = submitted data is not visible in page address. Always use for private data -->
         <form action="card.html" method="post" class="pure-form pure-form-stacked">
             <fieldset>
                 <legend>Customise your card</legend>
-
+                
+                <!-- The for attribute specifies which form element a label is bound to (by id) -->
                 <label for="image">Choose image</label>
                 <select name="image" id="image">
                     <option value="christmas">Christmas</option>
@@ -24,6 +29,7 @@
 
                 <label for="background">Choose background colour</label>
                 <select name="background" id="background">
+                    <!-- The value attribute specifies the value to be sent to a server when a form is submitted -->
                     <option value="celadon">Celadon</option>
                     <option value="graphite">Graphite</option>
                     <option value="rose">Barbie</option>
@@ -40,7 +46,7 @@
                 <select name="border" id="border">
                     <option value="none">None</option>
                     <option value="thin">Thin</option>
-                    <option value="think">Thick</option>
+                    <option value="thick">Thick</option>
                     <option value="filled">Filled</option>
                 </select>
 
@@ -62,7 +68,8 @@
             <h1 class="sketch">Happy birthday to you</h1>
         </div>
     </div>
-
+                        
+    <script src="js/custom.js"></script>
 	
 </body>
 </html>
