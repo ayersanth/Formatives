@@ -15,7 +15,7 @@
         <!-- method = specifies the HTTP method (GET or POST) to be used when submitting the form data -->
         <!-- get = defult, submitted form data will be visable in the page address -->
         <!-- post = submitted data is not visible in page address. Always use for private data -->
-        <form action="card.html" method="post" class="pure-form pure-form-stacked">
+        <form id="myForm" action="card.html" method="post" class="pure-form pure-form-stacked">
             <fieldset>
                 <legend>Customise your card</legend>
                 
@@ -54,18 +54,18 @@
                 <label for="message">Specify your message</label>
                 <textarea name="message" id="message" cols="30" rows="8"></textarea>
 
-                <input type="submit" name="submit" class="pure-button pure-button-primary" value="Make card">
+                <input id="subBtn" type="submit" name="submit" class="pure-button pure-button-primary" value="Make card">
             </fieldset>
         </form>
 
     </div>
 
-    <div class="card celadonBackground">
+    <div id="colour" class="card celadonBackground">
         <div>
-            <img src="assets/birthday.jpg"/>
+            <img id="front" src="assets/birthday.jpg"/>
         </div>
-        <div class="noBorder">
-            <h1 class="sketch">Happy birthday to you</h1>
+        <div id="bord" class="noBorder">
+            <h1 id="writing" class="sketch">Happy birthday to you</h1>
         </div>
     </div>
                         
